@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monbert Aaron G. Tabor | Technical & Customer Experience Virtual Assistant</title>
+    <meta name="description" content="Technical & Customer Support Virtual Assistant with 31+ months BPO financial & telecom experience (Concentrix, Alorica), CCNA networking, RHEL 10 Linux Administration, and AutoCAD 2D Drafting.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151f32',
+                            925: '#0b1120',
+                            950: '#060a12',
+                        },
+                        emerald: {
+                            450: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Swiss-Grid & Editorial Technical Styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .swiss-grid-bg {
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+        }
+        .dark-grid-bg {
+            background-size: 28px 28px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        }
+        .neo-shadow {
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+        }
+        .neo-border {
+            border: 1px solid rgba(15, 23, 42, 0.12);
+        }
+        /* Custom Scrollbar for Code/SOP Previews */
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.05);
+            border-radius: 6px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: rgba(100, 116, 139, 0.4);
+            border-radius: 6px;
+        }
+        /* Print Styles for 1-Click PDF Resume Export */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .print-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- TOP SHIFT ALIGNMENT & LIVE TELEMETRY BAR -->
+    <div class="bg-slate-950 text-slate-300 border-b border-slate-800 text-xs font-mono no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span class="text-white font-semibold tracking-tight">AVAILABLE TO START TODAY</span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="hidden sm:inline text-emerald-400">Full-Time or Part-Time (US EST/PST, UK & AU Shifts)</span>
+            </div>
+
+            <!-- Live Dual-Timezone Clock Widget -->
+            <div class="flex items-center gap-3 sm:gap-5 bg-slate-900/90 border border-slate-800 px-3 py-1 rounded-md">
+                <div class="flex items-center gap-1.5">
+                    <span class="text-slate-400">MNL (GMT+8):</span>
+                    <span id="clock-manila" class="text-white font-semibold">--:--:--</span>
+                </div>
+                <span class="text-slate-700">/</span>
+                <div class="flex items-center gap-1.5">
+                    <span class="text-slate-400">US EAST (ET):</span>
+                    <span id="clock-est" class="text-emerald-400 font-semibold">--:--:--</span>
+                </div>
+                <span class="hidden md:inline text-slate-700">/</span>
+                <div class="hidden md:flex items-center gap-1.5">
+                    <span class="text-slate-400">LOC:</span>
+                    <span class="text-slate-200">Mandaluyong, Metro Manila</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Identity -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-slate-900 text-white font-mono font-bold flex items-center justify-center text-sm tracking-tighter border border-slate-700 group-hover:bg-emerald-600 transition-colors">
+                    MT
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-bold text-slate-900 tracking-tight text-base">Monbert Aaron G. Tabor</span>
+                        <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                            monbert.github.io
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-500 font-medium">Technical & CX Virtual Assistant • IT, BPO & CAD</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+                <a href="#services" class="hover:text-slate-900 transition-colors">Service Pillars</a>
+                <a href="#proof-of-work" class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
+                    <span>Proof of Work</span>
+                    <span class="px-1.5 py-0.2 bg-emerald-100 text-emerald-800 font-mono text-[10px] rounded font-semibold">4 Artifacts</span>
+                </a>
+                <a href="#credentials" class="hover:text-slate-900 transition-colors">Track Record</a>
+                <a href="#video-pitch" class="hover:text-slate-900 transition-colors">45s Video Pitch</a>
+                <a href="#hire" class="hover:text-slate-900 transition-colors">Scope & Hire</a>
+            </nav>
+
+            <!-- Action CTA Buttons -->
+            <div class="flex items-center gap-2.5">
+                <button onclick="copyEmailToClipboard()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200/80 transition-all" title="Copy Direct Email">
+                    <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span>Copy Email</span>
+                </button>
+                <a href="#hire" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-slate-900 text-white hover:bg-emerald-600 transition-all shadow-sm">
+                    <span>Hire / Book Call</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Open Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100">1. Core Service Pillars</a>
+            <a href="#proof-of-work" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100">2. Interactive Proof of Work (4 Samples)</a>
+            <a href="#credentials" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100">3. Experience & Technical Credentials</a>
+            <a href="#video-pitch" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100">4. 45-Second Intro Video & Script</a>
+            <a href="#hire" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-sm font-semibold text-emerald-700 bg-emerald-50">5. Quick Scope & Book Discovery Call</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (DESIGNED TO CONVERT IN < 15 SECONDS) -->
+    <section class="relative swiss-grid-bg border-b border-slate-200 pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- Left Column: High-Impact Value Proposition & Metrics -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Verified Role Pill -->
+                    <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm">
+                        <span class="px-2 py-0.5 text-[11px] font-mono font-bold uppercase tracking-wider bg-emerald-500 text-white rounded-full">Ready Day 1</span>
+                        <span class="text-xs font-medium text-slate-700">Technical & Customer Experience Virtual Assistant</span>
+                        <span class="text-slate-300">•</span>
+                        <span class="text-xs font-mono text-slate-500">Mandaluyong, PH</span>
+                    </div>
+
+                    <!-- Primary Headline -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                        Technical & Customer Support VA who <span class="text-emerald-600 underline decoration-emerald-500/30 decoration-4 underline-offset-4">resolves tickets</span>, manages complex accounts, and runs your technical operations.
+                    </h1>
+
+                    <!-- Concrete Metrics Subheadline -->
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                        Stop hiring separate general VAs and tier-1 tech agents. I bring <strong class="text-slate-900 font-semibold">31+ months of frontline BPO customer experience</strong> across financial (<span class="font-medium text-slate-800">Concentrix Makati</span>) and telecommunications (<span class="font-medium text-slate-800">Alorica Eton Centris</span>) accounts—backed by a <strong class="text-slate-900 font-semibold">Computer Engineering</strong> foundation, <strong class="text-slate-900 font-semibold">60-hour CCNA</strong> network training, <strong class="text-slate-900 font-semibold">Red Hat Enterprise Linux (RH124)</strong> administration, and <strong class="text-slate-900 font-semibold">AutoCAD 2D</strong> precision.
+                    </p>
+
+                    <!-- 4 Key Metric Benchmarks Strip -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                        <div class="bg-white p-3.5 rounded-xl border border-slate-200/90 shadow-sm">
+                            <div class="text-2xl font-extrabold text-slate-900 font-mono">31+ Mo</div>
+                            <div class="text-xs text-slate-500 font-medium mt-0.5">Financial & Telecom BPO</div>
+                        </div>
+                        <div class="bg-white p-3.5 rounded-xl border border-slate-200/90 shadow-sm">
+                            <div class="text-2xl font-extrabold text-emerald-600 font-mono">CCNA</div>
+                            <div class="text-xs text-slate-500 font-medium mt-0.5">60-Hr Cisco IOS & VLANs</div>
+                        </div>
+                        <div class="bg-white p-3.5 rounded-xl border border-slate-200/90 shadow-sm">
+                            <div class="text-2xl font-extrabold text-slate-900 font-mono">RHEL 10</div>
+                            <div class="text-xs text-slate-500 font-medium mt-0.5">Red Hat Admin I (RH124)</div>
+                        </div>
+                        <div class="bg-white p-3.5 rounded-xl border border-slate-200/90 shadow-sm">
+                            <div class="text-2xl font-extrabold text-slate-900 font-mono">AutoCAD</div>
+                            <div class="text-xs text-slate-500 font-medium mt-0.5">2D Millwork & Shop Specs</div>
+                        </div>
+                    </div>
+
+                    <!-- Primary Conversion CTAs -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2 no-print">
+                        <a href="#hire" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-bold bg-slate-900 text-white hover:bg-emerald-600 transition-all shadow-md hover:shadow-lg">
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <span>Schedule a 15-Min Discovery Call</span>
+                        </a>
+                        <a href="#proof-of-work" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm font-semibold bg-white text-slate-800 hover:bg-slate-100 border border-slate-300 transition-all shadow-sm">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <span>Inspect Live Work Samples</span>
+                        </a>
+                        <button onclick="copyEmailToClipboard()" class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl text-sm font-mono font-medium bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 transition-all">
+                            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                            <span id="hero-email-label">Copy Direct Email</span>
+                        </button>
+                    </div>
+
+                    <!-- Equipment & Fiber Readiness Strip -->
+                    <div class="pt-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500 border-t border-slate-200/80">
+                        <div class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Noise-Canceling USB Headset</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>High-Speed Fiber + Mobile Failover</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>C1/C2 Neutral English Fluency</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: 45-Second Video Intro Card + Teleprompter Script Drawer -->
+                <div id="video-pitch" class="lg:col-span-5">
+                    <div class="bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden text-white">
+                        <!-- Top Card Header -->
+                        <div class="px-4 py-3 bg-slate-950 border-b border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="flex h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
+                                <span class="font-mono text-xs font-semibold tracking-wide text-slate-200">45-SECOND INTRO PITCH</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="toggleEmbedConfig()" class="text-[11px] font-mono text-slate-400 hover:text-emerald-400 px-2 py-0.5 rounded bg-slate-900 border border-slate-800 transition-colors" title="Paste your Loom or YouTube URL">
+                                    Set Video URL
+                                </button>
+                                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-2 py-0.5 rounded">0:45 Audio/Video</span>
+                            </div>
+                        </div>
+
+                        <!-- Optional Loom/YouTube Embed URL Config Bar (For Monbert or Live Preview) -->
+                        <div id="embed-config-bar" class="hidden px-4 py-3 bg-slate-950/95 border-b border-slate-800 space-y-2">
+                            <label class="block text-[11px] font-mono text-slate-400">Paste Loom or YouTube Embed URL to preview live:</label>
+                            <div class="flex gap-2">
+                                <input id="custom-video-url" type="url" placeholder="https://www.loom.com/embed/..." class="flex-1 bg-slate-900 border border-slate-700 rounded px-2.5 py-1.5 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+                                <button onclick="applyCustomVideoEmbed()" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-xs font-mono font-semibold rounded text-white">Load</button>
+                            </div>
+                            <p class="text-[11px] text-slate-500">Tip: In your final code, replace the <code class="text-slate-300">DEFAULT_VIDEO_EMBED_URL</code> variable in the script at the bottom of <code class="text-slate-300">index.html</code>.</p>
+                        </div>
+
+                        <!-- Video Container (Interactive Pitch Preview or Real Iframe) -->
+                        <div id="video-viewport" class="relative aspect-video bg-slate-950 flex flex-col justify-between p-5 dark-grid-bg overflow-hidden">
+                            <!-- Top Overlay Badges -->
+                            <div class="flex items-center justify-between z-10">
+                                <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300">
+                                    <span>Monbert Aaron G. Tabor</span>
+                                    <span class="text-emerald-400">• Live Pitch</span>
+                                </div>
+                                <span id="pitch-timer" class="font-mono text-xs text-slate-400 bg-slate-900/90 px-2 py-1 rounded border border-slate-800">00:00 / 00:45</span>
+                            </div>
+
+                            <!-- Center Interactive Pitch Simulator / Play Button -->
+                            <div class="my-auto text-center space-y-3 z-10 px-2">
+                                <button id="play-pitch-btn" onclick="toggleInteractivePitch()" class="mx-auto w-16 h-16 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center shadow-lg shadow-emerald-500/25 transition-all transform hover:scale-105 focus:outline-none">
+                                    <svg id="play-icon" class="w-7 h-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                                    <svg id="pause-icon" class="w-7 h-7 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+                                </button>
+                                <div id="pitch-caption-box" class="max-w-md mx-auto bg-slate-900/95 border border-slate-800 rounded-xl p-3 text-xs sm:text-sm text-slate-200 font-medium leading-snug shadow-inner">
+                                    "Hi! I'm Monbert Tabor from Metro Manila. In the next 45 seconds, I'll show you how I can take over your customer support queue and technical operations today..."
+                                </div>
+                            </div>
+
+                            <!-- Bottom Progress & Chapter Bar -->
+                            <div class="space-y-2 z-10">
+                                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                                    <div id="pitch-progress-bar" class="bg-emerald-500 h-full w-0 transition-all duration-300"></div>
+                                </div>
+                                <div class="flex justify-between text-[10px] font-mono text-slate-400">
+                                    <span>00:00 Track Record (31m BPO)</span>
+                                    <span>00:18 CCNA & Linux</span>
+                                    <span>00:32 AutoCAD & CTA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Toggleable Script & Teleprompter Drawer Control -->
+                        <div class="p-4 bg-slate-900 border-t border-slate-800 space-y-3">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <button onclick="toggleScriptDrawer()" class="flex items-center gap-2 text-xs font-mono font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                                    <svg id="script-chevron" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    <span>View 45-Second Video Script / Audio Transcript</span>
+                                </button>
+                                <button onclick="openTeleprompterModal()" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors" title="Use full-screen teleprompter to record your Loom video">
+                                    Launch Teleprompter
+                                </button>
+                            </div>
+
+                            <!-- Collapsible Transcript Drawer (Open by default or toggleable) -->
+                            <div id="script-drawer" class="hidden pt-2 border-t border-slate-800/80 text-xs text-slate-300 space-y-2.5 leading-relaxed font-sans">
+                                <div class="p-2.5 rounded-lg bg-slate-950/90 border border-slate-800/90">
+                                    <span class="font-mono text-[10px] text-emerald-400 uppercase font-bold block mb-1">[0:00 - 0:12 • Hook & BPO Pedigree]</span>
+                                    "Hi there! I'm Monbert Aaron Tabor, a Technical and Customer Experience Virtual Assistant based in Metro Manila. Over the past 31+ months at Concentrix and Alorica, I've managed high-volume financial and telecommunications accounts—resolving complex billing disputes, de-escalating frustrated callers, and troubleshooting live service outages."
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-950/90 border border-slate-800/90">
+                                    <span class="font-mono text-[10px] text-emerald-400 uppercase font-bold block mb-1">[0:13 - 0:28 • Technical & Engineering Edge]</span>
+                                    "Because I also have a 4th-year Computer Engineering background alongside 60 hours of CCNA network training and Red Hat Enterprise Linux administration, I don't just pass technical tickets to Tier 2—I actually solve them. Need 2D AutoCAD shop drawings or SOP documentation? I handle that too."
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-950/90 border border-slate-800/90">
+                                    <span class="font-mono text-[10px] text-emerald-400 uppercase font-bold block mb-1">[0:29 - 0:45 • Shift Readiness & Call to Action]</span>
+                                    "I'm equipped with high-speed fiber, a noise-canceling headset, and I'm ready to work US, UK, or Australian shifts starting today. Check out my 4 live work samples right below this video, and click 'Schedule a 15-Min Discovery Call' so we can clear your backlog this week!"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CORE SERVICE PILLARS (4 STRUCTURED OPERATIONAL CARDS) -->
+    <section id="services" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="max-w-3xl space-y-3">
+                <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-slate-100 border border-slate-200 text-xs font-mono font-semibold text-slate-700">
+                    <span>01 // OPERATIONAL CAPABILITIES</span>
+                </div>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Four specialized pillars under one roof.
+                </h2>
+                <p class="text-slate-600 text-base">
+                    Whether you run a SaaS helpdesk, an e-commerce brand, a MSP/IT consultancy, or an architectural millwork shop, here is exactly what you can delegate to me on Day 1.
+                </p>
+            </div>
+
+            <!-- 4 Service Cards Grid -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                
+                <!-- Pillar 1: CX & Account Management -->
+                <div class="group rounded-2xl bg-slate-50/70 hover:bg-white p-6 sm:p-8 border border-slate-200/90 hover:border-slate-900 transition-all neo-shadow flex flex-col justify-between print-break">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-mono font-bold shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                                31+ Months BPO Proven
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">
+                            1. Customer Experience & Account Management
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-5 leading-relaxed">
+                             Battle-tested across high-compliance financial accounts (Concentrix) and technical telecom queues (Alorica). I protect customer retention while keeping average handle times tight.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Omnichannel Queue Ownership:</strong> Inbound/outbound voice calls, live chat, and high-volume email ticketing.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Financial Dispute & Billing Resolution:</strong> Chargeback prevention, ledger audits, refunds, and recurring subscription adjustments.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Empathetic De-Escalation & CRM Hygiene:</strong> Turning angry 1-star callers into loyal advocates with clean Zendesk/HubSpot/Salesforce notes.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/80 flex flex-wrap gap-1.5">
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Zendesk</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Freshdesk</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">HubSpot CRM</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Intercom</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">RingCentral / Five9</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Technical Support & Systems Administration -->
+                <div class="group rounded-2xl bg-slate-50/70 hover:bg-white p-6 sm:p-8 border border-slate-200/90 hover:border-slate-900 transition-all neo-shadow flex flex-col justify-between print-break">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-mono font-bold shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-200 text-slate-800 border border-slate-300">
+                                CCNA + RHEL 10 (RH124)
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">
+                            2. Technical Support & Systems Administration
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-5 leading-relaxed">
+                            Trained in Cisco internetworking and Red Hat Enterprise Linux 10. I bridge the gap between non-technical customers and your engineering or DevOps team.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Tier-1 / Tier-2 Helpdesk Triage:</strong> Remote desktop diagnostics, DNS/DHCP/VPN troubleshooting, and structured bug reproduction logs.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Red Hat Linux (RHEL 10) Administration:</strong> Bash shell operations, SSH access, systemd service control, file permissions, and log inspection.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Cisco Network Configuration:</strong> VLAN segmentation, 802.1Q trunking, IPv4 subnetting, and Cisco IOS router/switch CLI diagnostics.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/80 flex flex-wrap gap-1.5">
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">RHEL 10 / Bash</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Cisco IOS CLI</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">VLAN / TCP/IP</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Jira Service Desk</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">AnyDesk / TeamViewer</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: AutoCAD 2D Drafting & Technical Documentation -->
+                <div class="group rounded-2xl bg-slate-50/70 hover:bg-white p-6 sm:p-8 border border-slate-200/90 hover:border-slate-900 transition-all neo-shadow flex flex-col justify-between print-break">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-mono font-bold shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-200 text-slate-800 border border-slate-300">
+                                Precision CAD & SOPs
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">
+                            3. AutoCAD 2D Drafting & Technical Documentation
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-5 leading-relaxed">
+                            Fast, disciplined 2D drafting for custom cabinetry, architectural millwork, hardware layouts, and engineering schematics using standardized layer templates.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Millwork & Cabinetry Shop Drawings:</strong> Plan views, elevations, dado/rabbet joinery details, and concealed hinge/slide hardware clearances.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Dynamic Blocks & Layer Hygiene:</strong> Reusable parametric blocks, strict lineweight/linetype standards, and 4x8ft sheet yield optimization.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Engineering & Operational SOP Manuals:</strong> Step-by-step Notion/Confluence knowledge bases, network diagrams, and assembly guides.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/80 flex flex-wrap gap-1.5">
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">AutoCAD 2D</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Dynamic Blocks</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">BOM Cutlists</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">DWG / PDF Plotting</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Notion / Confluence SOPs</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 4: Executive Operations & Online Tutoring -->
+                <div class="group rounded-2xl bg-slate-50/70 hover:bg-white p-6 sm:p-8 border border-slate-200/90 hover:border-slate-900 transition-all neo-shadow flex flex-col justify-between print-break">
+                    <div>
+                        <div class="flex items-center justify-between gap-4 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center font-mono font-bold shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-slate-200 text-slate-800 border border-slate-300">
+                                Ops & Instruction
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">
+                            4. Executive Operations & Structured Instruction
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-5 leading-relaxed">
+                            High-reliability administrative execution combined with patient, articulate English instruction for client onboarding or K–7 mathematics tutoring.
+                        </p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Inbox Zero & Calendar Architecture:</strong> Executive email triage, multi-timezone scheduling, and vendor follow-ups.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Spreadsheet & Data Operations:</strong> Google Sheets / Excel KPI dashboards, order processing, and lead list verification.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="text-emerald-600 font-bold mt-0.5">✓</span>
+                                <span><strong>Client Onboarding & Math Instruction:</strong> Clear screen-share walkthroughs for SaaS users plus interactive Grades 1–7 math tutoring.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/80 flex flex-wrap gap-1.5">
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Google Workspace</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">MS Excel / Office 365</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Notion Ops</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Loom Walkthroughs</span>
+                        <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-mono text-slate-600">Zoom / Google Meet</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE NDA-SAFE PROOF OF WORK (TABBED CASE STUDY INSPECTOR) -->
+    <section id="proof-of-work" class="py-16 lg:py-24 bg-slate-950 text-white border-b border-slate-800 dark-grid-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+                <div class="max-w-3xl space-y-3">
+                    <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-emerald-950/90 border border-emerald-700/60 text-xs font-mono font-semibold text-emerald-400">
+                        <span>02 // INTERACTIVE PROOF OF WORK (NDA-SAFE ARTIFACTS)</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
+                        Inspect how I work before you interview me.
+                    </h2>
+                    <p class="text-slate-400 text-base">
+                        Click through the 4 tabs below to inspect real, sanitized operational deliverables across Financial/Telecom De-escalation, CCNA/Linux Diagnostics, AutoCAD Millwork Drafting, and Inbox Triage.
+                    </p>
+                </div>
+                <div class="text-xs font-mono text-slate-400 bg-slate-900/90 border border-slate-800 px-3.5 py-2.5 rounded-xl">
+                    <span class="text-emerald-400 font-bold">100% NDA Compliant:</span> All customer PII & proprietary keys sanitized.
+                </div>
+            </div>
+
+            <!-- Interactive Tab Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 mb-6 no-print" role="tablist">
+                <button onclick="switchArtifactTab(0)" id="tab-btn-0" class="artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-emerald-600 text-white border-emerald-500 shadow-lg">
+                    <div class="font-mono text-[11px] uppercase tracking-wider opacity-85">Tab 01 • BPO / CX SOP</div>
+                    <div class="font-bold text-sm mt-0.5">Financial & Telecom Escalation</div>
+                </button>
+                <button onclick="switchArtifactTab(1)" id="tab-btn-1" class="artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-slate-900/90 text-slate-300 border-slate-800 hover:border-slate-700">
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-emerald-400">Tab 02 • IT / SysAdmin</div>
+                    <div class="font-bold text-sm mt-0.5">CCNA & RHEL 10 Playbook</div>
+                </button>
+                <button onclick="switchArtifactTab(2)" id="tab-btn-2" class="artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-slate-900/90 text-slate-300 border-slate-800 hover:border-slate-700">
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-emerald-400">Tab 03 • AutoCAD 2D</div>
+                    <div class="font-bold text-sm mt-0.5">Millwork & Hardware Spec Sheet</div>
+                </button>
+                <button onclick="switchArtifactTab(3)" id="tab-btn-3" class="artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-slate-900/90 text-slate-300 border-slate-800 hover:border-slate-700">
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-emerald-400">Tab 04 • Queue Ops</div>
+                    <div class="font-bold text-sm mt-0.5">200+ Ticket Triage Matrix</div>
+                </button>
+            </div>
+
+            <!-- ARTIFACT PANEL CONTAINER -->
+            <div class="bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
+                
+                <!-- TAB 01: FINANCIAL & TELECOM ESCALATION SOP -->
+                <div id="artifact-panel-0" class="artifact-panel p-6 sm:p-8 space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Artifact #01 • Concentrix & Alorica Methodology</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Billing Dispute & Service Outage De-Escalation Protocol</h3>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-3 py-1 rounded-md bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300">Repeat Contact Reduction: <strong class="text-emerald-400">-42%</strong></span>
+                            <button onclick="copyArtifactText('escalation-template-text')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-emerald-400 border border-slate-700 transition-colors">
+                                Copy Template
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <!-- Left: Internal Call & Account Audit Log -->
+                        <div class="lg:col-span-5 bg-slate-950 rounded-xl p-5 border border-slate-800 space-y-4 font-mono text-xs">
+                            <div class="flex items-center justify-between text-slate-400 border-b border-slate-800 pb-2">
+                                <span>CRM TICKET AUDIT LOG</span>
+                                <span class="text-emerald-400">STATUS: RESOLVED (FCR)</span>
+                            </div>
+                            <div class="space-y-2 text-slate-300">
+                                <div><span class="text-slate-500">SCENARIO:</span> Customer billed $149.00 twice during a regional fiber/telecom provisioning outage; threatened chargeback & cancellation.</div>
+                                <div><span class="text-slate-500">ROOT CAUSE:</span> Payment gateway retry timeout coincided with ONT provisioning lock on VLAN 20.</div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 space-y-2">
+                                <div class="text-emerald-400 font-semibold">4-STEP DE-ESCALATION SEQUENCE:</div>
+                                <ol class="list-decimal list-inside space-y-1.5 text-slate-300">
+                                    <li><strong>Validate & Anchor:</strong> Acknowledge both the billing error and the 14-hour outage in the first 20 seconds without defensive scripting.</li>
+                                    <li><strong>Dual-Track Fix:</strong> Void duplicate pending auth ID <code class="text-amber-300">#AUTH-8841</code> + issue pro-rated 3-day outage credit ($14.90).</li>
+                                    <li><strong>Technical Reset:</strong> Re-provision ONT port remotely & verify 0% packet loss over 100 ICMP pings.</li>
+                                    <li><strong>Written Confirmation:</strong> Send timestamped receipt before ending the call so the customer never needs to call back.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Right: Sanitized Written Follow-Up Sent to Customer -->
+                        <div class="lg:col-span-7 bg-slate-950 rounded-xl p-5 border border-slate-800 flex flex-col justify-between">
+                            <div class="flex items-center justify-between text-xs font-mono text-slate-400 border-b border-slate-800 pb-2.5 mb-3">
+                                <span>OUTBOUND RESOLUTION EMAIL (SENT IMMEDIATELY POST-CALL)</span>
+                                <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">CSAT: 5/5</span>
+                            </div>
+                            <pre id="escalation-template-text" class="text-xs sm:text-sm font-sans text-slate-200 whitespace-pre-wrap leading-relaxed custom-scroll overflow-x-auto">Subject: Resolved: Duplicate Charge Reversed ($149.00) & Connection Restored [Ticket #49281]
+
+Hi [Customer First Name],
+
+Thank you for speaking with me a few moments ago. I completely understand how frustrating it is to see a duplicate $149.00 charge on your statement while your connection was down, and I appreciate you giving me the chance to fix both on our call.
+
+Here is the confirmed summary of the actions completed on your account today:
+
+1. Duplicate $149.00 Charge Reversed (Ref #REV-90214):
+   We voided the duplicate authorization made on [Date]. Depending on your bank's posting cycle, the pending hold will drop off within 24 to 72 business hours.
+
+2. $14.90 Outage Courtesy Credit Applied:
+   I applied a 3-day pro-rated credit directly to your next billing cycle on [Next Bill Date] so you never pay for downtime.
+
+3. Line Stability Verified:
+   I refreshed your network port profile from our console and confirmed 0% packet loss across your gateway. Your download/upload speeds are now back at full provisioning.
+
+You don't need to call back or wait on hold again—if you have any questions when your bank statement updates, simply reply directly to this email and it will route straight to my desk.
+
+Warm regards,
+Monbert Aaron G. Tabor
+Technical & Account Support Specialist</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 02: NETWORK & LINUX DIAGNOSTIC PLAYBOOK -->
+                <div id="artifact-panel-1" class="artifact-panel hidden p-6 sm:p-8 space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Artifact #02 • Mnet CCNA (60-Hr) & Red Hat RH124 v10</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Tier-2 Cisco VLAN & RHEL 10 Diagnostic Playbook</h3>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="px-3 py-1 rounded-md bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300">Escalation Deflection: <strong class="text-emerald-400">Tier-1 → Solved</strong></span>
+                            <button onclick="copyArtifactText('cli-playbook-text')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-emerald-400 border border-slate-700 transition-colors">
+                                Copy CLI Commands
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Cisco IOS Section -->
+                        <div class="bg-slate-950 rounded-xl p-5 border border-slate-800 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-mono text-xs font-bold text-emerald-400">PART A // CISCO IOS VLAN & TRUNK TRIAGE</span>
+                                <span class="text-[11px] font-mono text-slate-500">CCNA Lab Verified</span>
+                            </div>
+                            <p class="text-xs text-slate-400">
+                                Used when a branch office or VoIP subnet loses gateway reachability after a switch port change.
+                            </p>
+                            <pre id="cli-playbook-text" class="bg-slate-900 p-4 rounded-lg border border-slate-800 font-mono text-xs text-emerald-300 overflow-x-auto leading-relaxed">! 1. Verify VLAN existence & active access ports
+SW-CORE-01# show vlan brief
+
+! 2. Inspect 802.1Q trunk encapsulation & native VLAN mismatch
+SW-CORE-01# show interfaces trunk
+SW-CORE-01# show interfaces Gi0/1 switchport
+
+! 3. Remediate missing VLAN on trunk link & verify ROAS subinterface
+SW-CORE-01(config)# interface GigabitEthernet0/1
+SW-CORE-01(config-if)# switchport trunk allowed vlan add 20,30
+SW-CORE-01(config-if)# end
+SW-CORE-01# show ip interface brief | exclude unassigned</pre>
+                        </div>
+
+                        <!-- Red Hat Enterprise Linux 10 (RH124) Section -->
+                        <div class="bg-slate-950 rounded-xl p-5 border border-slate-800 space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-mono text-xs font-bold text-emerald-400">PART B // RHEL 10 (RH124) SERVICE & DISK TRIAGE</span>
+                                <span class="text-[11px] font-mono text-slate-500">Bash / systemd</span>
+                            </div>
+                            <p class="text-xs text-slate-400">
+                                Rapid non-destructive health check for Linux application servers experiencing HTTP 502 or high disk utilization.
+                            </p>
+                            <pre class="bg-slate-900 p-4 rounded-lg border border-slate-800 font-mono text-xs text-sky-300 overflow-x-auto leading-relaxed"># 1. Check failed systemd units & recent journal errors
+[monbert@rhel10-prod ~]$ systemctl --failed
+[monbert@rhel10-prod ~]$ journalctl -u nginx.service -n 40 --no-pager
+
+# 2. Inspect filesystem capacity & inode exhaustion
+[monbert@rhel10-prod ~]$ df -hT
+[monbert@rhel10-prod ~]$ du -xh /var/log | sort -rh | head -n 10
+
+# 3. Verify listening sockets & SELinux permissions context
+[monbert@rhel10-prod ~]$ ss -tulpn | grep -E '80|443'
+[monbert@rhel10-prod ~]$ ls -lZ /var/www/html</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 03: AUTOCAD MILLWORK & HARDWARE SPEC SHEET -->
+                <div id="artifact-panel-2" class="artifact-panel hidden p-6 sm:p-8 space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Artifact #03 • AutoCAD 2D Commercial Millwork & Cabinetry</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Parametric Base Cabinet Section, Layer Standard & Yield Spec</h3>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="text-xs font-mono text-slate-400 mr-1">Toggle CAD Layers:</span>
+                            <button onclick="toggleCadLayer('cad-layer-dims')" id="btn-cad-layer-dims" class="px-2.5 py-1 rounded text-xs font-mono bg-emerald-600 text-white border border-emerald-500">A-DIMS (ON)</button>
+                            <button onclick="toggleCadLayer('cad-layer-hdwr')" id="btn-cad-layer-hdwr" class="px-2.5 py-1 rounded text-xs font-mono bg-sky-600 text-white border border-sky-500">M-HDWR (ON)</button>
+                            <button onclick="toggleCadLayer('cad-layer-joinery')" id="btn-cad-layer-joinery" class="px-2.5 py-1 rounded text-xs font-mono bg-amber-600 text-white border border-amber-500">M-JOINERY (ON)</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <!-- Interactive 2D CAD Blueprint Viewer (SVG) -->
+                        <div class="lg:col-span-7 bg-slate-950 rounded-xl p-4 border border-slate-800">
+                            <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 mb-2">
+                                <span>DWG VIEWPORT: BASE-CAB-24D-SECT.dwg (SCALE: 1-1/2" = 1'-0")</span>
+                                <span class="text-emerald-400">TOLERANCE: ±0.5mm (1/64")</span>
+                            </div>
+                            <!-- Crisp Vector AutoCAD Drawing -->
+                            <div class="bg-[#070b14] rounded-lg border border-slate-800 p-3 overflow-x-auto">
+                                <svg viewBox="0 0 600 360" class="w-full h-auto min-w-[460px]">
+                                    <!-- Grid Lines -->
+                                    <defs>
+                                        <pattern id="cadGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="600" height="360" fill="url(#cadGrid)" />
+
+                                    <!-- Layer 0 / M-CASEWORK (Primary White/Slate Panels) -->
+                                    <g stroke="#e2e8f0" stroke-width="2" fill="none">
+                                        <!-- Countertop 38mm overhang -->
+                                        <rect x="140" y="35" width="295" height="18" fill="#1e293b" />
+                                        <!-- Back Panel 19mm Birch Ply -->
+                                        <rect x="145" y="53" width="14" height="225" fill="#0f172a" />
+                                        <!-- Bottom Deck Panel -->
+                                        <rect x="159" y="264" width="246" height="14" fill="#0f172a" />
+                                        <!-- Toe Kick Assembly (102mm H x 76mm Recessed) -->
+                                        <rect x="145" y="278" width="225" height="45" stroke-dasharray="4 2" />
+                                        <line x1="370" y1="278" x2="370" y2="323" stroke-width="2.5" />
+                                        <!-- Front Door & Drawer Front (19mm MDF/Hardwood) -->
+                                        <rect x="411" y="58" width="14" height="58" fill="#1e293b" />
+                                        <rect x="411" y="122" width="14" height="156" fill="#1e293b" />
+                                        <!-- Adjustable 19mm Shelf -->
+                                        <rect x="175" y="185" width="215" height="12" fill="#0f172a" />
+                                    </g>
+
+                                    <!-- Layer M-JOINERY (Amber - Dado, Rabbet & Stretcher Nailers) -->
+                                    <g id="cad-layer-joinery" stroke="#f59e0b" stroke-width="1.6" fill="none">
+                                        <!-- Top Front & Rear Nailer Stretchers -->
+                                        <rect x="159" y="53" width="55" height="12" fill="#451a03" />
+                                        <rect x="350" y="53" width="55" height="12" fill="#451a03" />
+                                        <!-- Blind Dado Joint Callout Circle -->
+                                        <circle cx="159" cy="270" r="14" stroke-dasharray="3 2" />
+                                        <text x="180" y="255" fill="#fbbf24" font-family="JetBrains Mono" font-size="9">6mm BLIND DADO + CONFIRMAT</text>
+                                    </g>
+
+                                    <!-- Layer M-HDWR (Sky Blue - Undermount Slide & Blum Hinge Clearances) -->
+                                    <g id="cad-layer-hdwr" stroke="#38bdf8" stroke-width="1.5" fill="none">
+                                        <!-- Drawer Box & Undermount Soft-Close Slide -->
+                                        <rect x="175" y="66" width="228" height="44" stroke-dasharray="5 3" />
+                                        <line x1="175" y1="112" x2="405" y2="112" stroke-width="2.5" />
+                                        <text x="185" y="92" fill="#38bdf8" font-family="JetBrains Mono" font-size="9">BLUM TANDEM 533mm SLIDE (3mm REVEAL)</text>
+                                        <!-- 110-Deg Concealed Euro Hinge & 5mm Shelf Pin Matrix -->
+                                        <circle cx="408" cy="138" r="5" fill="#0284c7" />
+                                        <circle cx="408" cy="258" r="5" fill="#0284c7" />
+                                        <text x="245" y="178" fill="#38bdf8" font-family="JetBrains Mono" font-size="9">32mm SYSTEM BORE (5mm SLEEVE PINS)</text>
+                                    </g>
+
+                                    <!-- Layer A-DIMS (Emerald - Architectural Dimensions & Annotations) -->
+                                    <g id="cad-layer-dims" stroke="#10b981" stroke-width="1.2" fill="#10b981" font-family="JetBrains Mono" font-size="10">
+                                        <!-- Overall Height 876mm (34.5") -->
+                                        <line x1="95" y1="35" x2="95" y2="323" />
+                                        <line x1="85" y1="35" x2="130" y2="35" />
+                                        <line x1="85" y1="323" x2="130" y2="323" />
+                                        <text x="22" y="182" stroke="none">876mm (34.5")</text>
+
+                                        <!-- Overall Depth 610mm (24.0") -->
+                                        <line x1="145" y1="342" x2="425" y2="342" />
+                                        <line x1="145" y1="330" x2="145" y2="348" />
+                                        <line x1="425" y1="330" x2="425" y2="348" />
+                                        <text x="240" y="355" stroke="none">610mm (24.0") CARCASS</text>
+
+                                        <!-- Title Block Stamp -->
+                                        <rect x="448" y="250" width="138" height="92" fill="#090d16" stroke="#334155" stroke-width="1.2" />
+                                        <text x="456" y="268" stroke="none" fill="#10b981" font-size="9" font-weight="bold">DRAWN BY: M. TABOR</text>
+                                        <text x="456" y="284" stroke="none" fill="#cbd5e1" font-size="8">STD: AWI CUSTOM GRADE</text>
+                                        <text x="456" y="298" stroke="none" fill="#cbd5e1" font-size="8">MAT: 19mm BIRCH PLY</text>
+                                        <text x="456" y="312" stroke="none" fill="#cbd5e1" font-size="8">EDGE: 2mm PVC ABS</text>
+                                        <text x="456" y="328" stroke="none" fill="#38bdf8" font-size="8">DWG NO: MW-104B</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Right: CAD Standards & BOM Cutlist Workflow -->
+                        <div class="lg:col-span-5 space-y-4">
+                            <div class="bg-slate-950 rounded-xl p-5 border border-slate-800 space-y-3">
+                                <div class="font-mono text-xs text-emerald-400 font-bold">STANDARDIZED LAYER & BLOCK WORKFLOW</div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    I never send messy, unlayered geometry. Every DWG deliverable follows strict pre-set templates so CNC operators and shop fabricators can plot or nest immediately:
+                                </p>
+                                <div class="space-y-2 text-xs font-mono">
+                                    <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
+                                        <span class="text-white">M-CASEWORK (0.35mm)</span>
+                                        <span class="text-slate-400">19mm Ply / MDF Panels</span>
+                                    </div>
+                                    <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
+                                        <span class="text-sky-400">M-HDWR (0.18mm)</span>
+                                        <span class="text-slate-400">Slides, Hinges, 32mm Bore</span>
+                                    </div>
+                                    <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
+                                        <span class="text-amber-400">M-JOINERY (0.25mm)</span>
+                                        <span class="text-slate-400">Dados, Rabbets, Dowels</span>
+                                    </div>
+                                    <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-800">
+                                        <span class="text-emerald-400">A-ANNO-DIMS (0.15mm)</span>
+                                        <span class="text-slate-400">Associative Dim Styles</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-950 rounded-xl p-5 border border-slate-800 space-y-2">
+                                <div class="font-mono text-xs text-emerald-400 font-bold">MATERIAL YIELD & CUTLIST DELIVERABLE</div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Alongside 2D plans and elevations, I extract accurate Bill-of-Materials (BOM) tables accounting for saw kerf (3.2mm) and grain direction on 4'×8' (1220×2440mm) sheets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 04: INBOX & TICKET TRIAGE MATRIX -->
+                <div id="artifact-panel-3" class="artifact-panel hidden p-6 sm:p-8 space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                        <div>
+                            <span class="text-xs font-mono text-emerald-400 uppercase">Artifact #04 • High-Volume Support Queue Architecture</span>
+                            <h3 class="text-xl font-bold text-white mt-1">200+ Ticket Backlog Triage & SLA Routing Matrix</h3>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-slate-400">Filter Priority:</span>
+                            <button onclick="filterTriageRows('ALL')" class="px-2.5 py-1 rounded text-xs font-mono bg-slate-800 hover:bg-slate-700 text-white">All</button>
+                            <button onclick="filterTriageRows('P1')" class="px-2.5 py-1 rounded text-xs font-mono bg-red-950 text-red-300 border border-red-800">P1 Critical</button>
+                            <button onclick="filterTriageRows('P2')" class="px-2.5 py-1 rounded text-xs font-mono bg-amber-950 text-amber-300 border border-amber-800">P2 Billing</button>
+                            <button onclick="filterTriageRows('P3')" class="px-2.5 py-1 rounded text-xs font-mono bg-emerald-950 text-emerald-300 border border-emerald-800">P3 Macro/Auto</button>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                            <thead>
+                                <tr class="border-b border-slate-800 text-slate-400 font-mono text-xs uppercase">
+                                    <th class="py-3 px-4">SLA Tier</th>
+                                    <th class="py-3 px-4">Trigger / Queue Signal</th>
+                                    <th class="py-3 px-4">First Response Target</th>
+                                    <th class="py-3 px-4">Monbert's Execution Protocol</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-800/80 text-slate-200">
+                                <tr class="triage-row" data-priority="P1">
+                                    <td class="py-3.5 px-4 font-mono"><span class="px-2 py-0.5 rounded bg-red-950 text-red-400 border border-red-800 font-bold">P1 • URGENT</span></td>
+                                    <td class="py-3.5 px-4 font-medium">Service Outage / Production Lockout / VIP Escalation</td>
+                                    <td class="py-3.5 px-4 font-mono text-emerald-400">&lt; 5 Mins</td>
+                                    <td class="py-3.5 px-4 text-slate-300">Run live CLI/status check, acknowledge customer immediately, attach diagnostic logs if escalating to DevOps, update status banner.</td>
+                                </tr>
+                                <tr class="triage-row" data-priority="P2">
+                                    <td class="py-3.5 px-4 font-mono"><span class="px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-800 font-bold">P2 • HIGH</span></td>
+                                    <td class="py-3.5 px-4 font-medium">Duplicate Charge / Failed Renewal / Cancellation Threat</td>
+                                    <td class="py-3.5 px-4 font-mono text-emerald-400">&lt; 15 Mins</td>
+                                    <td class="py-3.5 px-4 text-slate-300">Audit Stripe/payment ledger, execute authorized refund or retention offer, send written confirmation receipt to prevent chargeback.</td>
+                                </tr>
+                                <tr class="triage-row" data-priority="P3">
+                                    <td class="py-3.5 px-4 font-mono"><span class="px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800 font-bold">P3 • NORMAL</span></td>
+                                    <td class="py-3.5 px-4 font-medium">How-To Questions / CAD Redline Revision / Account Config</td>
+                                    <td class="py-3.5 px-4 font-mono text-emerald-400">&lt; 45 Mins</td>
+                                    <td class="py-3.5 px-4 text-slate-300">Resolve in one touch using customized macro + annotated screenshot or 60-second Loom walkthrough; link KB article.</td>
+                                </tr>
+                                <tr class="triage-row" data-priority="P3">
+                                    <td class="py-3.5 px-4 font-mono"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 font-bold">P4 • BATCH</span></td>
+                                    <td class="py-3.5 px-4 font-medium">Password Resets / Order Tracking / Spam Filtering</td>
+                                    <td class="py-3.5 px-4 font-mono text-emerald-400">Automated / &lt; 2 Hrs</td>
+                                    <td class="py-3.5 px-4 text-slate-300">Build Zendesk/Freshdesk auto-tagging rules and self-service macros to cut manual agent touches by 35%+.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: VERIFIED TRACK RECORD & TECHNICAL CREDENTIALS TIMELINE -->
+    <section id="credentials" class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 swiss-grid-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div class="max-w-3xl space-y-3">
+                    <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-white border border-slate-200 text-xs font-mono font-semibold text-slate-700">
+                        <span>03 // VERIFIED EXPERIENCE & TECHNICAL CREDENTIALS</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Enterprise BPO discipline meets engineering training.
+                    </h2>
+                    <p class="text-slate-600 text-base">
+                        Every role and certification below reflects hands-on production work in Metro Manila's premier BPO hubs and technical laboratories.
+                    </p>
+                </div>
+                <button onclick="window.print()" class="no-print inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 text-xs font-mono font-semibold shadow-sm transition-all">
+                    <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                    <span>Print / Save PDF Resume View</span>
+                </button>
+            </div>
+
+            <!-- Timeline Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Left Column: BPO & Work Experience (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2">
+                        WORK HISTORY & ENTERPRISE ACCOUNT MANAGEMENT
+                    </h3>
+
+                    <!-- Role 1: Alorica -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/90 neo-shadow relative print-break">
+                        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                            <div>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-emerald-100 text-emerald-800 mb-1.5">
+                                    Current Role • Telecom Account
+                                </span>
+                                <h4 class="text-lg font-bold text-slate-900">Technical Customer Experience Expert</h4>
+                                <p class="text-sm font-medium text-slate-600">Alorica • Eton Centris, Quezon City, Metro Manila</p>
+                            </div>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-md border border-slate-200">
+                                July 2026 – Present
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600 mt-4">
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Deliver frontline technical troubleshooting, network provisioning diagnostics, and billing support for a major North American telecommunications provider.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>De-escalate complex service outage inquiries and hardware configuration issues while maintaining strict First-Call Resolution (FCR) and AHT targets.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Document clear root-cause ticket notes across multi-system CRM and network telemetry tools.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Role 2: Concentrix (31 Months) -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/90 neo-shadow relative print-break">
+                        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                            <div>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-slate-900 text-white mb-1.5">
+                                    31 Months Tenure • Financial Account
+                                </span>
+                                <h4 class="text-lg font-bold text-slate-900">Customer Success Representative</h4>
+                                <p class="text-sm font-medium text-slate-600">Concentrix • Insular Life Bldg, Ayala Ave, Makati City</p>
+                            </div>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-md border border-slate-200">
+                                31 Months (2.5+ Yrs)
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600 mt-4">
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Managed high-compliance financial account inquiries, disputed ledger transactions, security verifications, and payment plan structures over 31 consecutive months.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Consistently met quality assurance (QA), compliance, and CSAT benchmarks in a fast-paced Makati financial district operation.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Collaborated with back-office dispute teams to resolve recurring billing anomalies and protect account retention.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Role 3: Technical Drafting & Online Math Instruction -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200/90 neo-shadow relative print-break">
+                        <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                            <div>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-slate-100 text-slate-700 border border-slate-200 mb-1.5">
+                                     Independent & Academic Practice
+                                </span>
+                                <h4 class="text-lg font-bold text-slate-900">AutoCAD 2D Drafter & Online Mathematics Instructor</h4>
+                                <p class="text-sm font-medium text-slate-600">Remote / Metro Manila</p>
+                            </div>
+                            <span class="font-mono text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-md border border-slate-200">
+                                Ongoing
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-600 mt-4">
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Produce 2D AutoCAD technical drawings, millwork/cabinetry layouts, dynamic blocks, and hardware specification sheets.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 font-bold">•</span>
+                                <span>Deliver engaging 1-on-1 online mathematics instruction (Grades 1–7) in fluent English, breaking down complex analytical concepts into simple steps.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Technical Training, Certifications & Engineering Education (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2">
+                        TECHNICAL CERTIFICATIONS & ENGINEERING EDUCATION
+                    </h3>
+
+                    <!-- Credential 1: Mnet CCNA -->
+                    <div class="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-lg print-break">
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold bg-emerald-500 text-slate-950">COMPLETED OCT 2026</span>
+                            <span class="font-mono text-xs text-slate-400">60-Hour Intensive</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mt-1">Cisco Certified Network Associate (CCNA) Training</h4>
+                        <p class="text-xs font-mono text-emerald-400 mt-0.5">Mnet Solutions, Inc.</p>
+                        <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                            Hands-on configuration and troubleshooting of LAN switching, VLAN segmentation, 802.1Q trunking, IPv4/IPv6 addressing, subnetting, and Cisco IOS router CLI operations.
+                        </p>
+                    </div>
+
+                    <!-- Credential 2: Red Hat RH124 -->
+                    <div class="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-lg print-break">
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold bg-red-500 text-white">COMPLETED SEPT 2026</span>
+                            <span class="font-mono text-xs text-slate-400">RHEL 10.0 • Ch. 1–8 Labs</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mt-1">Red Hat System Administration I (RH124 v10.0)</h4>
+                        <p class="text-xs font-mono text-red-400 mt-0.5">Red Hat Training & Certification Coursework</p>
+                        <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                            Practical command-line administration in Bash, Vim editing, file system hierarchy management, local user/group permissions, systemd process control, and RHEL Lightspeed AI integration.
+                        </p>
+                    </div>
+
+                    <!-- Credential 3: B.S. Computer Engineering -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 neo-shadow print-break">
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold bg-slate-100 text-slate-800 border border-slate-200">4th Year Undergraduate</span>
+                            <span class="font-mono text-xs text-slate-500">Engineering Foundation</span>
+                        </div>
+                        <h4 class="text-base font-bold text-slate-900 mt-1">Bachelor of Science in Computer Engineering</h4>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                            Coursework & laboratory projects covering digital electronics, embedded microcontroller systems (ESP32 / Arduino), computer architecture, networking fundamentals, and Computer-Aided Drafting (AutoCAD).
+                        </p>
+                    </div>
+
+                    <!-- Direct Location & Shift Readiness Box -->
+                    <div class="bg-emerald-50 rounded-2xl p-5 border border-emerald-200 text-xs text-emerald-950 space-y-2">
+                        <div class="font-mono font-bold uppercase text-emerald-800 flex items-center gap-2">
+                            <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+                            <span>DEPLOYMENT & SHIFT LOGISTICS</span>
+                        </div>
+                        <p class="leading-relaxed">
+                            <strong>Base:</strong> Mandaluyong City, Metro Manila, Philippines (GMT+8).<br>
+                            <strong>Shift Alignment:</strong> Experienced working graveyard US Eastern (EST/EDT), US Pacific (PST/PDT), UK (GMT/BST), and Australian (AEST) business hours.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: FRICTIONLESS HIRE / QUICK SCOPE & DIRECT BRIEF GENERATOR -->
+    <section id="hire" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- Left Column: Direct Contact Channels & Fast Onboarding Promise (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-emerald-100 border border-emerald-200 text-xs font-mono font-semibold text-emerald-800">
+                        <span>04 // HIRE IN 3 CLICKS</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Ready to clear your support queue or drafting backlog today?
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Skip the 3-week recruiting agency markup. Use the interactive scope builder on the right to generate a pre-filled brief, or grab my direct contact details below for an immediate 15-minute interview.
+                    </p>
+
+                    <!-- Direct Contact Cards -->
+                    <div class="space-y-3 pt-2">
+                        <!-- Direct Email Copy Card -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3">
+                            <div>
+                                <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold">Direct Email (Fastest Response)</div>
+                                <div id="contact-email-display" class="text-sm font-mono font-bold text-slate-900 mt-0.5">monbert.tabor.va@gmail.com</div>
+                            </div>
+                            <button onclick="copyEmailToClipboard()" class="px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-emerald-600 text-white text-xs font-mono font-semibold transition-colors shrink-0">
+                                Copy Email
+                            </button>
+                        </div>
+
+                        <!-- Discovery Call Booking Card -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3">
+                            <div>
+                                <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold">Live Video Interview</div>
+                                <div class="text-sm font-bold text-slate-900 mt-0.5">15-Minute Discovery & Tech Check</div>
+                            </div>
+                            <button onclick="openBookingModal()" class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-semibold transition-colors shrink-0">
+                                Book Slot
+                            </button>
+                        </div>
+
+                        <!-- GitHub & Portfolio Link Card -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-3">
+                            <div>
+                                <div class="text-[11px] font-mono uppercase text-slate-400 font-semibold">Live Web Portfolio</div>
+                                <div class="text-sm font-mono font-bold text-slate-900 mt-0.5">https://monbert.github.io</div>
+                            </div>
+                            <button onclick="copyPortfolioUrl()" class="px-3.5 py-2 rounded-lg bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 text-xs font-mono font-semibold transition-colors shrink-0">
+                                Copy URL
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Same-Day Onboarding Checklist -->
+                    <div class="p-5 rounded-2xl bg-slate-900 text-white space-y-2.5">
+                        <div class="text-xs font-mono text-emerald-400 font-bold uppercase">What happens after you reach out:</div>
+                        <ol class="text-xs text-slate-300 space-y-1.5 list-decimal list-inside">
+                            <li><strong>Within 2 Hours:</strong> I reply to confirm your timezone and share my live calendar or jump on an instant Zoom/Meet call.</li>
+                            <li><strong>15-Min Call:</strong> We review your ticket queue, CRM, Linux/network environment, or AutoCAD DWG templates.</li>
+                            <li><strong>Same-Day Start:</strong> We begin with a low-risk paid trial sprint or immediate full-time/part-time onboarding.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Quick Scope & Brief Generator (7 Cols) -->
+                <div class="lg:col-span-7 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200/90 neo-shadow no-print">
+                    <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+                        <div>
+                            <span class="text-xs font-mono font-bold text-emerald-700 uppercase">Interactive Scope Estimator</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-0.5">Configure Your Role & Send Brief in 30 Seconds</h3>
+                        </div>
+                        <span class="px-2.5 py-1 rounded bg-white border border-slate-200 text-xs font-mono text-slate-600">Instant Payload</span>
+                    </div>
+
+                    <form id="scope-form" onsubmit="handleScopeSubmit(event)" class="space-y-5">
+                        <!-- Step 1: Select Primary Workload -->
+                        <div>
+                            <label class="block text-xs font-mono uppercase text-slate-600 font-bold mb-2">1. Select Primary Workload Pillar:</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="pillar" value="Customer Experience & BPO Account Management" checked onchange="updateBriefPreview()" class="peer sr-only">
+                                    <div class="p-3 rounded-xl bg-white border border-slate-200 peer-checked:border-emerald-600 peer-checked:bg-emerald-50/50 text-xs font-semibold text-slate-800 transition-all">
+                                        🎧 CX, Billing & Account Support
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="pillar" value="Tier-1/2 Technical Support (CCNA / Linux RHEL)" onchange="updateBriefPreview()" class="peer sr-only">
+                                    <div class="p-3 rounded-xl bg-white border border-slate-200 peer-checked:border-emerald-600 peer-checked:bg-emerald-50/50 text-xs font-semibold text-slate-800 transition-all">
+                                        💻 Tier-1/2 IT, Network & Linux Support
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="pillar" value="AutoCAD 2D Millwork Drafting & SOP Docs" onchange="updateBriefPreview()" class="peer sr-only">
+                                    <div class="p-3 rounded-xl bg-white border border-slate-200 peer-checked:border-emerald-600 peer-checked:bg-emerald-50/50 text-xs font-semibold text-slate-800 transition-all">
+                                        📐 AutoCAD 2D Drafting & Tech Docs
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="pillar" value="Hybrid Technical + Customer Support VA" onchange="updateBriefPreview()" class="peer sr-only">
+                                    <div class="p-3 rounded-xl bg-white border border-slate-200 peer-checked:border-emerald-600 peer-checked:bg-emerald-50/50 text-xs font-semibold text-slate-800 transition-all">
+                                        ⚡ Hybrid Tech + CX Virtual Assistant
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Engagement Model & Target Shift -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="engagement-select" class="block text-xs font-mono uppercase text-slate-600 font-bold mb-1.5">2. Weekly Schedule:</label>
+                                <select id="engagement-select" onchange="updateBriefPreview()" class="w-full rounded-xl bg-white border border-slate-300 px-3.5 py-2.5 text-sm text-slate-800 font-medium focus:outline-none focus:border-slate-900">
+                                    <option value="Full-Time (40 hrs/wk)">Full-Time Dedicated (40 hrs/wk)</option>
+                                    <option value="Part-Time (20 hrs/wk)">Part-Time Retainer (20 hrs/wk)</option>
+                                    <option value="1-Week Paid Trial Sprint">1-Week Paid Trial Sprint</option>
+                                    <option value="Project-Based / CAD Package">Project-Based / CAD Deliverable</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="timezone-select" class="block text-xs font-mono uppercase text-slate-600 font-bold mb-1.5">3. Your Shift Timezone:</label>
+                                <select id="timezone-select" onchange="updateBriefPreview()" class="w-full rounded-xl bg-white border border-slate-300 px-3.5 py-2.5 text-sm text-slate-800 font-medium focus:outline-none focus:border-slate-900">
+                                    <option value="US Eastern Time (EST/EDT)">US Eastern Time (EST / EDT)</option>
+                                    <option value="US Pacific Time (PST/PDT)">US Pacific Time (PST / PDT)</option>
+                                    <option value="UK / Europe (GMT/BST)">UK / Europe (GMT / BST)</option>
+                                    <option value="Australia / APAC (AEST/GMT+8)">Australia / APAC (AEST / GMT+8)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Client Name / Company & Quick Note -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="client-name" class="block text-xs font-mono uppercase text-slate-600 font-bold mb-1.5">Your Name & Company:</label>
+                                <input id="client-name" type="text" oninput="updateBriefPreview()" placeholder="e.g. Alex Rivera, Founder at CloudScale" class="w-full rounded-xl bg-white border border-slate-300 px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-slate-900">
+                            </div>
+                            <div>
+                                <label for="client-tools" class="block text-xs font-mono uppercase text-slate-600 font-bold mb-1.5">Key Tools / Queue Volume:</label>
+                                <input id="client-tools" type="text" oninput="updateBriefPreview()" placeholder="e.g. Zendesk, Slack, AutoCAD, ~50 tickets/day" class="w-full rounded-xl bg-white border border-slate-300 px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-slate-900">
+                            </div>
+                        </div>
+
+                        <!-- Auto-Generated Message Preview -->
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <label class="text-xs font-mono uppercase text-slate-600 font-bold">Auto-Generated Hiring Brief Preview:</label>
+                                <span class="text-[11px] font-mono text-emerald-700">Ready to send or copy</span>
+                            </div>
+                            <textarea id="generated-brief" rows="4" class="w-full rounded-xl bg-slate-900 text-slate-100 font-mono text-xs p-3.5 border border-slate-800 focus:outline-none"></textarea>
+                        </div>
+
+                        <!-- Submit & Copy Actions -->
+                        <div class="flex flex-wrap items-center gap-3 pt-1">
+                            <button type="submit" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md transition-all">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <span>Open in Email Client</span>
+                            </button>
+                            <button type="button" onclick="copyBriefPayload()" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm transition-all">
+                                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                                <span>Copy Brief for Upwork / OLJ / LinkedIn</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs font-mono">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded bg-emerald-500 text-slate-950 font-bold flex items-center justify-center">MT</span>
+                <span>© 2026 Monbert Aaron G. Tabor • Hosted on GitHub Pages (<span class="text-white">monbert.github.io</span>)</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#proof-of-work" class="hover:text-white transition-colors">Proof of Work</a>
+                <a href="#credentials" class="hover:text-white transition-colors">Credentials</a>
+                <button onclick="openTeleprompterModal()" class="text-emerald-400 hover:underline no-print">Teleprompter Mode</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TELEPROMPTER MODAL (FOR MONBERT TO RECORD HIS 45-SECOND LOOM VIDEO TODAY) -->
+    <div id="teleprompter-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4 no-print">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 sm:p-8 text-white shadow-2xl space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs font-mono text-emerald-400 uppercase font-bold">Loom Recording Helper • Eye-Level Teleprompter</span>
+                    <h3 class="text-lg font-bold mt-0.5">45-Second Video Pitch Script (115 Words)</h3>
+                </div>
+                <button onclick="closeTeleprompterModal()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">✕</button>
+            </div>
+            <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 text-lg sm:text-xl leading-relaxed font-medium text-slate-100 space-y-4 max-h-[60vh] overflow-y-auto custom-scroll">
+                <p>
+                    "Hi there! I'm <span class="text-emerald-400 font-bold">Monbert Aaron Tabor</span>, a Technical and Customer Experience Virtual Assistant based in Metro Manila."
+                </p>
+                <p>
+                    "Over the past <span class="text-emerald-400 font-bold">31+ months at Concentrix and Alorica</span>, I've managed high-volume financial and telecommunications accounts—resolving complex billing disputes, de-escalating frustrated callers, and troubleshooting live service outages."
+                </p>
+                <p>
+                    "Because I also have a <span class="text-emerald-400 font-bold">Computer Engineering background</span> alongside <span class="text-emerald-400 font-bold">60 hours of CCNA network training and Red Hat Enterprise Linux administration</span>, I don't just pass technical tickets to Tier 2—I actually solve them. Need 2D AutoCAD shop drawings or SOP documentation? I handle that too."
+                </p>
+                <p>
+                    "I'm equipped with high-speed fiber, a noise-canceling headset, and I'm ready to work US, UK, or Australian shifts starting today. Check out my 4 live work samples right below this video, and click <span class="text-emerald-400 font-bold">'Schedule a 15-Min Discovery Call'</span> so we can clear your backlog this week!"
+                </p>
+            </div>
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400 pt-2">
+                <span>Tip: Position this window right below your webcam lens while recording Loom.</span>
+                <button onclick="closeTeleprompterModal()" class="px-4 py-2 rounded-lg bg-emerald-600 text-white font-semibold">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISCOVERY CALL BOOKING MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 no-print">
+        <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-6 sm:p-8 text-slate-900 shadow-2xl space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <div>
+                    <span class="text-xs font-mono text-emerald-700 font-bold uppercase">Instant Interview Scheduling</span>
+                    <h3 class="text-lg font-bold mt-0.5">Book a 15-Minute Discovery Call</h3>
+                </div>
+                <button onclick="closeBookingModal()" class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600">✕</button>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Select your preferred shift window below to generate an instant calendar invite request, or link your free <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">calendly.com</code> URL directly in this button.
+            </p>
+            <div class="space-y-2.5 text-xs font-mono">
+                <button onclick="selectQuickSlot('Today / Tomorrow • 9:00 AM - 12:00 PM US EST')" class="w-full text-left p-3.5 rounded-xl bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 flex items-center justify-between transition-all">
+                    <span class="font-bold text-slate-800">US Eastern Morning Window (9:00 AM – 12:00 PM EST)</span>
+                    <span class="text-emerald-700 font-semibold">Select →</span>
+                </button>
+                <button onclick="selectQuickSlot('Today / Tomorrow • 1:00 PM - 5:00 PM US EST (10 AM - 2 PM PST)')" class="w-full text-left p-3.5 rounded-xl bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 flex items-center justify-between transition-all">
+                    <span class="font-bold text-slate-800">US Afternoon / Pacific Window (1:00 PM – 5:00 PM EST)</span>
+                    <span class="text-emerald-700 font-semibold">Select →</span>
+                </button>
+                <button onclick="selectQuickSlot('UK / Australian Overlap Window (Flexible GMT / AEST)')" class="w-full text-left p-3.5 rounded-xl bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-500 flex items-center justify-between transition-all">
+                    <span class="font-bold text-slate-800">UK / Australian Shift Window (GMT / AEST)</span>
+                    <span class="text-emerald-700 font-semibold">Select →</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM TOAST NOTIFICATION -->
+    <div id="toast-notification" class="fixed bottom-5 right-5 z-50 hidden transform transition-all duration-300 bg-slate-900 text-white border border-emerald-500/60 rounded-xl px-4 py-3 shadow-2xl flex items-center gap-3 text-xs font-mono no-print">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <!-- APPLICATION JAVASCRIPT -->
+    <script>
+        // =========================================================================
+        // 1. CONFIGURATION (MONBERT CAN UPDATE HIS EMAIL & LOOM EMBED HERE)
+        // =========================================================================
+        const DIRECT_EMAIL = "monbert.tabor.va@gmail.com";
+        const PORTFOLIO_URL = "https://monbert.github.io";
+        const DEFAULT_VIDEO_EMBED_URL = ""; // Paste Loom/YouTube embed URL here when recorded
+
+        // =========================================================================
+        // 2. LIVE DUAL-TIMEZONE CLOCK (MANILA GMT+8 & US EASTERN EST/EDT)
+        // =========================================================================
+        function updateLiveClocks() {
+            const now = new Date();
+            
+            const manilaFormatter = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'Asia/Manila',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+            const estFormatter = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/New_York',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+            const mnlEl = document.getElementById('clock-manila');
+            const estEl = document.getElementById('clock-est');
+            if (mnlEl) mnlEl.textContent = manilaFormatter.format(now);
+            if (estEl) estEl.textContent = estFormatter.format(now);
+        }
+        setInterval(updateLiveClocks, 1000);
+        updateLiveClocks();
+
+        // =========================================================================
+        // 3. INTERACTIVE 45-SECOND PITCH SIMULATOR & CUSTOM LOOM EMBED LOADER
+        // =========================================================================
+        let pitchInterval = null;
+        let pitchSeconds = 0;
+        const pitchSegments = [
+            { time: 0, text: "\"Hi there! I'm Monbert Aaron Tabor, a Technical and Customer Experience Virtual Assistant based in Metro Manila.\"" },
+            { time: 8, text: "\"Over the past 31+ months at Concentrix and Alorica, I've managed high-volume financial and telecom accounts—resolving billing disputes and service outages.\"" },
+            { time: 20, text: "\"With my 4th-year Computer Engineering background, 60-hour CCNA network training, and Red Hat Linux administration, I solve Tier-1 and Tier-2 technical tickets directly.\"" },
+            { time: 33, text: "\"Need 2D AutoCAD millwork shop drawings or SOP manuals? I handle that too—and I'm ready to start on US, UK, or AU shifts today.\"" }
+        ];
+
+        function toggleInteractivePitch() {
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const timerEl = document.getElementById('pitch-timer');
+            const progressEl = document.getElementById('pitch-progress-bar');
+            const captionEl = document.getElementById('pitch-caption-box');
+
+            if (pitchInterval) {
+                clearInterval(pitchInterval);
+                pitchInterval = null;
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+                return;
+            }
+
+            playIcon.classList.add('hidden');
+            pauseIcon.classList.remove('hidden');
+
+            pitchInterval = setInterval(() => {
+                pitchSeconds++;
+                if (pitchSeconds > 45) {
+                    pitchSeconds = 0;
+                    clearInterval(pitchInterval);
+                    pitchInterval = null;
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                }
+
+                const formattedSec = String(pitchSeconds).padStart(2, '0');
+                timerEl.textContent = `00:${formattedSec} / 00:45`;
+                progressEl.style.width = `${(pitchSeconds / 45) * 100}%`;
+
+                for (let i = pitchSegments.length - 1; i >= 0; i--) {
+                    if (pitchSeconds >= pitchSegments[i].time) {
+                        captionEl.textContent = pitchSegments[i].text;
+                        break;
+                    }
+                }
+            }, 1000);
+        }
+
+        function toggleEmbedConfig() {
+            const bar = document.getElementById('embed-config-bar');
+            bar.classList.toggle('hidden');
+        }
+
+        function applyCustomVideoEmbed() {
+            const urlInput = document.getElementById('custom-video-url').value.trim();
+            if (!urlInput) {
+                showToast("Please paste a valid Loom or YouTube embed URL.");
+                return;
+            }
+            const viewport = document.getElementById('video-viewport');
+            viewport.innerHTML = `<iframe src="${urlInput}" class="w-full h-full border-0" allowfullscreen></iframe>`;
+            document.getElementById('embed-config-bar').classList.add('hidden');
+            showToast("Live video embed loaded!");
+        }
+
+        function toggleScriptDrawer() {
+            const drawer = document.getElementById('script-drawer');
+            const chevron = document.getElementById('script-chevron');
+            drawer.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+
+        function openTeleprompterModal() {
+            document.getElementById('teleprompter-modal').classList.remove('hidden');
+        }
+
+        function closeTeleprompterModal() {
+            document.getElementById('teleprompter-modal').classList.add('hidden');
+        }
+
+        // =========================================================================
+        // 4. PROOF OF WORK TAB SWITCHER & INTERACTIVE CAD LAYER TOGGLES
+        // =========================================================================
+        function switchArtifactTab(tabIndex) {
+            const panels = document.querySelectorAll('.artifact-panel');
+            const buttons = document.querySelectorAll('.artifact-tab-btn');
+
+            panels.forEach((panel, idx) => {
+                if (idx === tabIndex) {
+                    panel.classList.remove('hidden');
+                } else {
+                    panel.classList.add('hidden');
+                }
+            });
+
+            buttons.forEach((btn, idx) => {
+                if (idx === tabIndex) {
+                    btn.className = "artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-emerald-600 text-white border-emerald-500 shadow-lg";
+                } else {
+                    btn.className = "artifact-tab-btn text-left p-3.5 rounded-xl border transition-all bg-slate-900/90 text-slate-300 border-slate-800 hover:border-slate-700";
+                }
+            });
+        }
+
+        function toggleCadLayer(layerId) {
+            const layerEl = document.getElementById(layerId);
+            const btnEl = document.getElementById('btn-' + layerId);
+            if (!layerEl || !btnEl) return;
+
+            const isHidden = layerEl.classList.toggle('hidden');
+            const baseLabel = layerId.replace('cad-layer-', '').toUpperCase();
+            if (isHidden) {
+                btnEl.textContent = `${baseLabel} (OFF)`;
+                btnEl.classList.add('opacity-50');
+            } else {
+                btnEl.textContent = `${baseLabel} (ON)`;
+                btnEl.classList.remove('opacity-50');
+            }
+        }
+
+        function filterTriageRows(priority) {
+            const rows = document.querySelectorAll('.triage-row');
+            rows.forEach(row => {
+                if (priority === 'ALL' || row.getAttribute('data-priority') === priority) {
+                    row.classList.remove('hidden');
+                } else {
+                    row.classList.add('hidden');
+                }
+            });
+        }
+
+        // =========================================================================
+        // 5. QUICK SCOPE & HIRING BRIEF GENERATOR
+        // =========================================================================
+        function updateBriefPreview() {
+            const selectedPillarEl = document.querySelector('input[name="pillar"]:checked');
+            const pillar = selectedPillarEl ? selectedPillarEl.value : "Hybrid Technical + CX VA";
+            const engagement = document.getElementById('engagement-select').value;
+            const timezone = document.getElementById('timezone-select').value;
+            const clientName = document.getElementById('client-name').value.trim() || "[Your Name / Company]";
+            const clientTools = document.getElementById('client-tools').value.trim() || "our current support & operations stack";
+
+            const briefText = `Hi Monbert,\n\nI reviewed your portfolio at monbert.github.io and would like to schedule a 15-minute discovery call.\n\n• Role Focus: ${pillar}\n• Schedule: ${engagement}\n• Target Shift: ${timezone}\n• Stack / Context: ${clientTools}\n\nBest regards,\n${clientName}`;
+
+            const briefArea = document.getElementById('generated-brief');
+            if (briefArea) briefArea.value = briefText;
+        }
+
+        function handleScopeSubmit(event) {
+            event.preventDefault();
+            const brief = document.getElementById('generated-brief').value;
+            const subject = encodeURIComponent("Interview Request: Technical & CX Virtual Assistant (monbert.github.io)");
+            const body = encodeURIComponent(brief);
+            window.location.href = `mailto:${DIRECT_EMAIL}?subject=${subject}&body=${body}`;
+            showToast("Opening your email client with pre-filled brief...");
+        }
+
+        function copyBriefPayload() {
+            const brief = document.getElementById('generated-brief').value;
+            copyTextToClipboard(brief, "Hiring brief copied! Paste into Upwork, OLJ, or Email.");
+        }
+
+        // =========================================================================
+        // 6. CLIPBOARD HELPERS, MODALS & MOBILE MENU
+        // =========================================================================
+        function copyTextToClipboard(text, successMessage) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMessage);
+            } catch (err) {
+                showToast("Copy ready: " + text);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function copyEmailToClipboard() {
+            copyTextToClipboard(DIRECT_EMAIL, `Copied direct email: ${DIRECT_EMAIL}`);
+        }
+
+        function copyPortfolioUrl() {
+            copyTextToClipboard(PORTFOLIO_URL, `Copied portfolio link: ${PORTFOLIO_URL}`);
+        }
+
+        function copyArtifactText(elementId) {
+            const el = document.getElementById(elementId);
+            if (el) {
+                copyTextToClipboard(el.innerText, "Work sample template copied to clipboard!");
+            }
+        }
+
+        function openBookingModal() {
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function selectQuickSlot(slotLabel) {
+            closeBookingModal();
+            const tzSelect = document.getElementById('timezone-select');
+            if (tzSelect) {
+                const briefArea = document.getElementById('generated-brief');
+                briefArea.value += `\n• Preferred 15-Min Call Window: ${slotLabel}`;
+            }
+            document.getElementById('hire').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Selected window: ${slotLabel}. Click 'Open in Email' or Copy!`);
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        let toastTimeout = null;
+        function showToast(message) {
+            const toast = document.getElementById('toast-notification');
+            const msgEl = document.getElementById('toast-message');
+            msgEl.textContent = message;
+            toast.classList.remove('hidden');
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateBriefPreview();
+            if (DEFAULT_VIDEO_EMBED_URL) {
+                document.getElementById('custom-video-url').value = DEFAULT_VIDEO_EMBED_URL;
+                applyCustomVideoEmbed();
+            }
+        });
+    </script>
+</body>
+</html>
