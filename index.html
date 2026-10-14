@@ -34,6 +34,7 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
@@ -41,16 +42,18 @@
       background-color: var(--bg-main);
       color: var(--text-main);
       line-height: 1.6;
+      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 1200px;
+      width: 100%;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 28px;
     }
 
-    /* Top Status Bar */
+    /* Top Status Bar - Centered */
     .top-bar {
       background-color: var(--bg-dark);
       color: #ffffff;
@@ -62,15 +65,17 @@
 
     .top-bar-inner {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 6px 24px;
     }
 
     .status-indicator {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       font-weight: 600;
       color: #34d399;
@@ -82,12 +87,14 @@
       background-color: #10b981;
       border-radius: 50%;
       box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+      flex-shrink: 0;
     }
 
     .clock-bar {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 16px;
+      justify-content: center;
+      gap: 12px;
       color: #cbd5e1;
       flex-wrap: wrap;
     }
@@ -96,41 +103,44 @@
       color: #ffffff;
     }
 
-    /* Navigation Header */
+    /* Sticky Navigation Header - Centered & Contained */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
+      width: 100%;
     }
 
     .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 74px;
+      min-height: 72px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       gap: 16px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       color: var(--text-main);
       flex-shrink: 0;
     }
 
     .brand-avatar {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border-radius: 10px;
       background-color: var(--bg-dark);
       color: #ffffff;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -142,32 +152,16 @@
       flex-direction: column;
     }
 
-    .brand-name-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      white-space: nowrap;
-    }
-
     .brand-name {
       font-weight: 800;
-      font-size: 16px;
+      font-size: 15.5px;
       letter-spacing: -0.02em;
-    }
-
-    .brand-badge {
-      background-color: var(--accent-soft);
-      color: var(--accent);
-      border: 1px solid var(--accent-border);
-      font-size: 11px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 999px;
+      line-height: 1.2;
       white-space: nowrap;
     }
 
     .brand-sub {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--text-muted);
       white-space: nowrap;
     }
@@ -175,14 +169,16 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 20px;
+      justify-content: center;
+      gap: 18px;
       list-style: none;
+      margin: 0 auto;
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--text-muted);
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
       white-space: nowrap;
       transition: color 0.15s ease;
@@ -195,7 +191,7 @@
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-shrink: 0;
     }
 
@@ -203,10 +199,10 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 10px 16px;
+      gap: 6px;
+      padding: 9px 14px;
       border-radius: 10px;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
       text-decoration: none;
       cursor: pointer;
@@ -247,12 +243,12 @@
 
     /* Hero Section */
     .hero {
-      padding: 56px 0 48px;
+      padding: 52px 0 48px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.35fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
       gap: 32px;
       align-items: stretch;
     }
@@ -288,7 +284,7 @@
     }
 
     .hero-title {
-      font-size: 40px;
+      font-size: 38px;
       font-weight: 800;
       line-height: 1.15;
       letter-spacing: -0.03em;
@@ -301,9 +297,9 @@
     }
 
     .hero-desc {
-      font-size: 16.5px;
+      font-size: 16px;
       color: var(--text-muted);
-      margin-bottom: 28px;
+      margin-bottom: 26px;
       max-width: 640px;
     }
 
@@ -311,8 +307,8 @@
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin-bottom: 28px;
+      gap: 12px;
+      margin-bottom: 26px;
     }
 
     .stat-card {
@@ -323,13 +319,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-height: 104px;
+      min-height: 102px;
       box-shadow: var(--shadow);
     }
 
     .stat-value {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       color: var(--text-main);
       margin-bottom: 4px;
@@ -343,7 +339,7 @@
     }
 
     .stat-label {
-      font-size: 12.5px;
+      font-size: 12px;
       color: var(--text-muted);
       line-height: 1.35;
     }
@@ -351,7 +347,7 @@
     .hero-cta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
     }
 
@@ -360,7 +356,7 @@
       background-color: var(--bg-dark);
       color: #ffffff;
       border-radius: 18px;
-      padding: 28px;
+      padding: 26px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -373,8 +369,8 @@
       justify-content: space-between;
       gap: 12px;
       border-bottom: 1px solid #334155;
-      padding-bottom: 18px;
-      margin-bottom: 18px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
 
     .scorecard-title {
@@ -384,7 +380,7 @@
     }
 
     .scorecard-sub {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-light);
     }
 
@@ -392,7 +388,7 @@
       background-color: rgba(16, 185, 129, 0.15);
       color: #34d399;
       border: 1px solid rgba(52, 211, 153, 0.3);
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 600;
       padding: 4px 10px;
       border-radius: 999px;
@@ -403,15 +399,15 @@
     .scorecard-list {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 12px;
-      margin-bottom: 20px;
+      gap: 10px;
+      margin-bottom: 18px;
     }
 
     .scorecard-item {
       background-color: var(--bg-dark-card);
       border: 1px solid #334155;
       border-radius: 10px;
-      padding: 12px 14px;
+      padding: 11px 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -419,13 +415,13 @@
     }
 
     .scorecard-item-label {
-      font-size: 13px;
+      font-size: 12.5px;
       color: #cbd5e1;
     }
 
     .scorecard-item-val {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       color: #34d399;
       white-space: nowrap;
@@ -437,7 +433,7 @@
       border-radius: 10px;
       padding: 14px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 12.5px;
+      font-size: 12px;
       color: #e2e8f0;
       display: flex;
       flex-direction: column;
@@ -516,7 +512,7 @@
     }
 
     .service-title {
-      font-size: 19px;
+      font-size: 18.5px;
       font-weight: 700;
       margin-bottom: 10px;
       color: var(--text-main);
@@ -734,7 +730,7 @@
     }
 
     /* Responsive adjustments */
-    @media (max-width: 1024px) {
+    @media (max-width: 1080px) {
       .nav-links {
         display: none;
       }
@@ -751,6 +747,9 @@
     }
 
     @media (max-width: 680px) {
+      .container {
+        padding: 0 18px;
+      }
       .stats-grid,
       .cards-grid-3,
       .tabs-bar,
@@ -760,7 +759,7 @@
       .hero-title {
         font-size: 30px;
       }
-      .brand-badge {
+      .brand-sub {
         display: none;
       }
     }
@@ -777,7 +776,7 @@
 </head>
 <body>
 
-  <!-- Top Live Bar -->
+  <!-- Top Live Bar (Centered) -->
   <div class="top-bar">
     <div class="container top-bar-inner">
       <div class="status-indicator">
@@ -794,32 +793,29 @@
     </div>
   </div>
 
-  <!-- Sticky Navigation -->
+  <!-- Sticky Navigation (Centered & Contained) -->
   <header class="site-header">
     <div class="container nav-inner">
       <a href="#" class="brand">
         <div class="brand-avatar">MT</div>
         <div class="brand-text">
-          <div class="brand-name-row">
-            <span class="brand-name">Monbert Aaron G. Tabor</span>
-            <span class="brand-badge">Computer Engineering Graduate</span>
-          </div>
-          <span class="brand-sub">Customer Success • Office Support • Technical Support • Data Analyst</span>
+          <span class="brand-name">Monbert Aaron G. Tabor</span>
+          <span class="brand-sub">Customer Success • Office Support • Computer Engineering</span>
         </div>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#customer-support">1. Customer & Office Support</a></li>
-        <li><a href="#engineering-qa">2. Engineering, QA & Data</a></li>
+        <li><a href="#customer-support">Customer Support</a></li>
+        <li><a href="#engineering-qa">Engineering & QA</a></li>
         <li><a href="#proof-of-work">Work Samples</a></li>
-        <li><a href="#experience">Resume & Experience</a></li>
+        <li><a href="#experience">Resume</a></li>
         <li><a href="#references">References</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button type="button" class="btn btn-outline" onclick="copyEmail()">
-          <span id="nav-email-text">monbertt@gmail.com</span>
-        </button>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monbertt@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          monbertt@gmail.com
+        </a>
         <a href="#hire" class="btn btn-primary">Hire / Send Brief</a>
       </div>
     </div>
@@ -869,8 +865,9 @@
 
             <div class="hero-cta-row">
               <a href="#hire" class="btn btn-dark">Hire Monbert Today</a>
-              <button type="button" class="btn btn-outline" onclick="copyEmail()">Copy: monbertt@gmail.com</button>
-              <button type="button" class="btn btn-outline" onclick="window.print()">Print / Save PDF Resume</button>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monbertt@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Email in New Tab</a>
+              <button type="button" class="btn btn-outline" onclick="copyEmail()"><span id="copy-btn-text">Copy: monbertt@gmail.com</span></button>
+              <button type="button" class="btn btn-outline" onclick="window.print()">Print / Save PDF</button>
             </div>
           </div>
         </div>
@@ -1257,7 +1254,7 @@ Switch# show ip interface brief
                 Completed academic degree in Computer Engineering covering software development, digital systems, networking, and technical documentation.
               </p>
               <div style="padding-top:12px; border-top:1px solid var(--border);">
-                <div class="timeline-role" style="font-size:15px;">MNET — CCNA Training</div>
+                <div class="timeline-role" style="font-size:15px;">MNET - CCNA Training</div>
                 <p class="service-desc" style="margin-bottom:0; margin-top:4px;">
                   Completed comprehensive technical training on core networking concepts including Virtual Local Area Networks (VLANs), IP addressing, routing protocols, and network switching configuration.
                 </p>
@@ -1325,7 +1322,7 @@ Switch# show ip interface brief
               <span class="service-tag">Immediate Onboarding</span>
               <h2 class="section-title" style="font-size:24px;">Ready to Join Your Team Today</h2>
               <p class="service-desc">
-                Reach out directly via email or phone for an immediate interview. I am equipped for full-time or part-time remote shifts across U.S., UK, and Australian business hours.
+                Reach out directly via email or phone for an immediate interview. All email buttons below open in a new tab so you never lose your place on this page.
               </p>
               <ul class="service-list">
                 <li>Direct Email: <strong>monbertt@gmail.com</strong></li>
@@ -1335,13 +1332,14 @@ Switch# show ip interface brief
               </ul>
             </div>
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <button type="button" class="btn btn-primary" onclick="copyEmail()">Copy Email Address</button>
-              <a href="mailto:monbertt@gmail.com" class="btn btn-outline">Open Email Client</a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monbertt@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Email via Gmail (New Tab)</a>
+              <a href="mailto:monbertt@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Open Mail App (New Tab)</a>
+              <button type="button" class="btn btn-outline" onclick="copyEmail()">Copy Email</button>
             </div>
           </div>
 
           <div class="service-card">
-            <h3 class="service-title">Send a Quick Job Brief to monbertt@gmail.com</h3>
+            <h3 class="service-title">Send a Quick Job Brief (Opens in New Tab)</h3>
             <div class="form-group">
               <label class="form-label" for="client-name">Your Name & Company</label>
               <input type="text" id="client-name" class="form-input" placeholder="e.g. Alex Rivera - Horizon SaaS" />
@@ -1359,7 +1357,10 @@ Switch# show ip interface brief
               <label class="form-label" for="client-notes">Shift Hours & Key Tools</label>
               <textarea id="client-notes" class="form-textarea" placeholder="Tell me your target timezone, tools used, and start date..."></textarea>
             </div>
-            <button type="button" class="btn btn-dark" style="width:100%;" onclick="sendBrief()">Send Brief to monbertt@gmail.com</button>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <button type="button" class="btn btn-dark" onclick="sendBriefGmail()">Send via Gmail (New Tab)</button>
+              <button type="button" class="btn btn-outline" onclick="sendBriefMailto()">Send via Mail App (New Tab)</button>
+            </div>
           </div>
         </div>
       </div>
@@ -1387,7 +1388,7 @@ Switch# show ip interface brief
 
     function copyEmail() {
       navigator.clipboard.writeText(DIRECT_EMAIL).then(() => {
-        const el = document.getElementById("nav-email-text");
+        const el = document.getElementById("copy-btn-text");
         if (el) {
           const prev = el.textContent;
           el.textContent = "Copied: " + DIRECT_EMAIL;
@@ -1403,7 +1404,7 @@ Switch# show ip interface brief
       panels.forEach((panel, i) => panel.classList.toggle("active", i === idx));
     }
 
-    function sendBrief() {
+    function buildBriefParams() {
       const name = document.getElementById("client-name").value.trim() || "Hiring Manager";
       const role = document.getElementById("client-role").value;
       const notes = document.getElementById("client-notes").value.trim() || "Available to discuss shift details on a quick call.";
@@ -1415,7 +1416,19 @@ Switch# show ip interface brief
         "Shift & Project Notes: " + notes + "\n\n" +
         "Let me know your availability for a quick interview."
       );
-      window.location.href = "mailto:" + DIRECT_EMAIL + "?subject=" + subject + "&body=" + body;
+      return { subject, body };
+    }
+
+    function sendBriefGmail() {
+      const { subject, body } = buildBriefParams();
+      const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=" + DIRECT_EMAIL + "&su=" + subject + "&body=" + body;
+      window.open(gmailUrl, "_blank", "noopener,noreferrer");
+    }
+
+    function sendBriefMailto() {
+      const { subject, body } = buildBriefParams();
+      const mailtoUrl = "mailto:" + DIRECT_EMAIL + "?subject=" + subject + "&body=" + body;
+      window.open(mailtoUrl, "_blank", "noopener,noreferrer");
     }
   </script>
 </body>
